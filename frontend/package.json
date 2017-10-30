@@ -1,0 +1,15 @@
+{
+  "name": "condorlabs",
+  "version": "1.0.0",
+  "description": "Condorlabs test",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Maria Paz Muñoz",
+  "license": "ISC"
+}

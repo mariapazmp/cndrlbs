@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+ 
+<html lang="es" ng-app>
+ 
+<head>
+	<title>Course Search || Cóndorlabs</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/dfa173c63d.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 	crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script> 
+</head>
+ 
+<body>
+
+	<header>
+		<div id="contact-info">
+			<div class="container">
+				<nav>
+					<span class="font-grey"><i class="fa fa-map-marker" aria-hidden="true"></i>Florida</span>
+					<span><a href="#" class="font-white">Support Center</a></span>
+					<span><a href="#" class="font-green">Login</a></span>
+				</nav>
+			</div>
+		</div>
+
+		<nav id="main-menu">
+			<div class="container">
+				<div class="logo"><img src="img/logo-cebroker.png"></div>
+				<ul>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Account Options</a></li>
+					<li><a href="#">Organizations</a></li>
+					<li><a href="#">About</a></li>
+					<li><button class="blue-btn btn">7 days trial</button></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="search">
+			<div class="black-container">
+				<div class="container">
+					<h1>Course Search</h1>
+					<form>
+						<input type="text" ng-model="yourName" placeholder="Search courses and providers...">
+						<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>	
+					</form>
+					<div class="options">
+						<ul>
+							<li><a href="#">Florida</a></li>
+							<li><a href="#">Registered Nurse Florida</a></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="featured-courses">
+			<div class="container">
+				<h2>Featured Courses for {{yourName}}</h2>
+
+				<div class="course">
+					<div class="image"><img src="img/course-image.png"></div>
+					<div class="details">
+						<h4>24 hour LPN & RN Bundle - Complete Florida Package</h4>
+						<span class="subtitle">SMARTCE</span>
+						<p><span>29 Hrs</span><span>Computer Based Training</span></p>
+						<div class="price"><span>$30.00</span></div>
+					</div>
+				</div>
+
+				<div class="course">
+					<div class="image"><img src="img/course-image.png"></div>
+					<div class="details">
+						<h4>24 hour LPN & RN Bundle - Complete Florida Package</h4>
+						<span class="subtitle">SMARTCE</span>
+						<p><span>29 Hrs</span><span>Computer Based Training</span></p>
+						<div class="price"><span>$30.00</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="search-results">
+			<div class="container">
+				<h2><b>19930</b> Results</h2>
+					<div class="course">
+						<div class="details">
+							<h4>24 hour LPN & RN Bundle - Complete Florida Package</h4>
+							<span class="subtitle">SMARTCE</span>
+							<p><span>29 Hrs</span><span>Computer Based Training</span></p>
+							<div class="price"><span>$30.00</span></div>
+						</div>
+					</div>
+					<div class="course">
+						<div class="details">
+							<h4>24 hour LPN & RN Bundle - Complete Florida Package</h4>
+							<span class="subtitle">SMARTCE</span>
+							<p><span>29 Hrs</span><span>Computer Based Training</span></p>
+							<div class="price"><span>$30.00</span></div>
+						</div>
+					</div>
+					<div class="course">
+						<div class="details">
+							<h4>24 hour LPN & RN Bundle - Complete Florida Package</h4>
+							<span class="subtitle">SMARTCE</span>
+							<p><span>29 Hrs</span><span>Computer Based Training</span></p>
+							<div class="price"><span>$30.00</span></div>
+						</div>
+					</div>
+					<div class="course">
+						<div class="details">
+							<h4>24 hour LPN & RN Bundle - Complete Florida Package</h4>
+							<span class="subtitle">SMARTCE</span>
+							<p><span>29 Hrs</span><span>Computer Based Training</span></p>
+							<div class="price"><span>$30.00</span></div>
+						</div>
+					</div>
+			</div>
+		</section>
+	</header>
+	<main>
+	</main>
+</body>
+</html>

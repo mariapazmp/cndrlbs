@@ -1,0 +1,324 @@
+/* COLORS:
+	Gris claro:  #9d9d9d
+	Gris oscuro: #545454
+	Verde menta: #00be8f
+
+	Fondo gris: #ecf1f4
+	Borde gris: #eee
+
+	Gris fuente:        #8a8e8d
+	Gris claro fuente:  #a9b3b2
+	Gris oscuro fuente: #666
+ */
+
+/* ---------
+  Code Challenge for Cóndorlabs by
+  María Paz Muñoz
+  2017
+--------- */
+
+
+/* Reset styles */
+  html {min-height: 100%; font-family: 'Open Sans', sans-serif;}
+  html, body {margin: 0; padding: 0}
+  a {text-decoration: none;}
+  fieldset { border: none; }
+  .clear { clear: both; display: block; }
+  a { text-decoration: none; color: #666; }
+  a:hover { text-decoration: none; }
+  li, ul, body, div, span, p, h1, h2, h3, input { margin: 0px; padding: 0px; }
+  ul { list-style-type: none; }
+  img { border: none; }
+  body, html { font-size: 14px; color: #666; }
+  button {background-color: transparent; border: none;}
+
+
+/* General Styles */
+
+body {
+	background-color: #ecf1f4;
+}
+
+ .container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+	.container {
+	    width: 960px;
+	    max-width: 100%;
+	}
+}
+@media (max-width: 991px) {
+	.container {
+	    width: 100%;
+	}
+}
+
+i.fa {
+	margin-right: 7px;
+}
+
+.font-grey {color: #9d9d9d;}
+.font-green {color: #00be8f;}
+.font-white {color: white;}
+
+.btn {
+	padding: 10px 15px;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.blue-btn {
+	background-color: #1086b8;
+	border-color: #1086b8;
+	border-radius: 5px;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,.15);
+	color: #fff;
+	font-weight: 500;
+}
+
+section h2 {
+	color: #999;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+/* Main styles */
+
+#contact-info {
+	background-color: #545454;
+	color: #9d9d9d;
+	font-weight: 600;
+	padding: 8px 0;
+	text-align: right;
+}
+
+#contact-info nav span{
+	font-size: 0.9rem;
+	margin-left: 10px;
+}
+
+#contact-info nav span::after {
+	content: "\2022";
+	margin-left: 10px;
+}
+
+#contact-info nav span:last-child::after{
+	display: none;
+}
+
+#main-menu .logo{
+	float: left;
+	width: 15%;
+	margin-top: 10px;
+}
+
+#main-menu {
+	padding: 10px 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+#main-menu .logo img{
+	width: 100%
+}
+
+#main-menu ul {
+	float: right;
+	margin: 10px 0;
+}
+
+#main-menu ul li {
+	float: left;
+	font-weight: 600;
+	padding: 0 10px;
+}
+
+#main-menu ul li a {
+	padding: 10px 0;
+    display: inline-block;
+}
+
+#main-menu ul li:last-child {
+	padding-right: 0;	
+}
+
+#search {
+	background-image: url('../img/background-search-1.jpg');
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	text-align: center;
+}
+
+#search a {
+	color: white;
+}
+
+#search h1 {
+	font-weight: 300;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+#search form {
+	margin-bottom: 20px;
+}
+
+#search input {
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #666;
+    margin-right: -4px;
+    padding: 12px 15px 11px;
+    width: 35%;
+}
+
+#search button {
+	background-color: #00be8f;
+	border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 15px;
+}
+
+#search button i {
+	margin: 0;
+}
+
+#search .black-container {
+	background-color: rgba(0,0,0,0.5);
+	padding: 50px 0;
+}
+
+#search .options {
+	padding-bottom: 20px;
+}
+
+#search .options li {
+	border-right: 1px white solid;
+	display: inline;
+	font-size: 0.9rem;
+	font-weight: 300;
+	padding: 0 10px;
+}
+
+#search .options li:last-child {
+	border-right: none;
+}
+
+#featured-courses {
+	margin: 20px 0 50px;
+	text-align: left;
+}
+
+.course h4 {
+	color: #666;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+#featured-courses .course {
+	clear: both;
+	overflow: hidden;
+}
+.course {
+	margin-bottom: 20px;
+}
+
+.course .image {
+	width: 35%;
+	float: left;
+}
+
+.course .image img {
+	width: 100%;
+}
+
+.course .details {
+	background-color: white;
+	box-sizing: border-box;
+	float: left;
+	padding: 20px 15px;
+	width: 65%;
+}
+
+.course .details p span::after {
+	content: "\2022";
+	margin-left: 5px;
+}
+
+.course .details p span:last-child::after{
+	display: none;
+}
+
+.course .subtitle {
+	color: #5b5b5b;
+    font-weight: 300;
+    clear: both;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.course p {
+	display: inline-block;
+    margin-bottom: 15px;
+}
+
+.course .price {
+	border-top: 1px #eee solid;
+	clear: both;
+}
+
+.course .price span {
+	background-color: #00be8f;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	font-weight: 700;
+	margin-top: 15px;
+	padding: 5px 10px;
+}
+
+#search-results {
+	text-align: left;
+    font-size: 0;
+}
+
+#search-results h2 b{
+	color: #00be8f;
+}
+
+#search-results .course {
+	border-bottom: #dae3e3;
+	font-size: 1rem;
+	display: inline-block;
+    position: relative;
+    width: 33.33%;
+    border-right: 15px transparent solid;
+    box-sizing: border-box;
+}
+
+#search-results .course:nth-child(4n){
+	border-right: none;
+}
+
+#search-results .course .details {
+	width: 100%;
+	float: none;
+	height: auto;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "nodeApirest",
+  "version": "1.0.0",
+  "description": "Backend Code Test for Condorlabs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server.js"
+  },
+  "author": "Maria Paz Muñoz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
