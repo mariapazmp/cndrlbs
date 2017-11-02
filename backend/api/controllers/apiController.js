@@ -1,48 +1,30 @@
 'use strict';
 
+var dbconfig = require('../../dbconfig.js');
+var Provider = null;//dbconfig.Provider;
+console.log(Provider);
 
-var mongoose = require('mongoose'),
-  Record = mongoose.model('Records');
+exports.list_all_provs = function(req, res) { 
+  dbconfig.list_all_provs(req, res);
+};
 
-exports.list_all_recs = function(req, res) {
-  Record.find({}, function(err, record) {
+exports.create_a_prov = function(req, res) {
+  var new_provider = new Provider(req.body);
+  new_provider.save(function(err, provider) {
     if (err)
       res.send(err);
-    res.json(record);
+    res.json(provider);
   });
 };
 
-exports.create_a_rec = function(req, res) {
-  var new_rec = new Record(req.body);
-  new_rec.save(function(err, record) {
-    if (err)
-      res.send(err);
-    res.json(record);
-  });
+exports.read_a_prov = function(req, res) { 
+  dbconfig.read_a_prov(req, res);
 };
 
-exports.read_a_rec = function(req, res) {
-  Record.findById(req.params.recordId, function(err, record) {
-    if (err)
-      res.send(err);
-    res.json(record);
-  });
+exports.update_a_prov = function(req, res) {
+  dbconfig.update_a_prov(req, res);
 };
 
-exports.update_a_rec = function(req, res) {
-  Record.findOneAndUpdate({_id: req.params.recordId}, req.body, {new: true}, function(err, record) {
-    if (err)
-      res.send(err);
-    res.json(record);
-  });
-};
-
-exports.delete_a_rec = function(req, res) {
-  Record.remove({
-    _id: req.params.recordId
-  }, function(err, record) {
-    if (err)
-      res.send(err);
-    res.json({ message: 'Record successfully deleted from Database' });
-  });
+exports.delete_a_prov = function(req, res) {
+  dbconfig.delete_a_prov(req, res);
 };
