@@ -1,16 +1,14 @@
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 9002,
+  mongoose = require('mongoose'),
+  Provider = require('./api/models/apiModel')
   bodyParser = require('body-parser');
- /* mongoose = require('mongoose'),
- //Provider = require('./api/models/apiModel'),
 
-// Connection
-mongoose.Promise = global.Promise;*/
+mongoose.Promise = global.Promise;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-//var dbconfig = require('./dbconfig.js');
-//dbconfig.mongoConnect();
 
 // Routes
 var routes = require('./api/routes/apiRoutes'); //importing route

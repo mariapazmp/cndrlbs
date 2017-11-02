@@ -1,20 +1,14 @@
 'use strict';
 
 var dbconfig = require('../../dbconfig.js');
-var Provider = null;//dbconfig.Provider;
-console.log(Provider);
+var Provider = dbconfig.Provider;
 
 exports.list_all_provs = function(req, res) { 
   dbconfig.list_all_provs(req, res);
 };
 
 exports.create_a_prov = function(req, res) {
-  var new_provider = new Provider(req.body);
-  new_provider.save(function(err, provider) {
-    if (err)
-      res.send(err);
-    res.json(provider);
-  });
+  dbconfig.create_a_prov(req, res);
 };
 
 exports.read_a_prov = function(req, res) { 
